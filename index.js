@@ -7,8 +7,9 @@ function driversWithRevenueOver(drivers,revenue){
 
 function driverNamesWithRevenueOver(drivers,revenue){
   return drivers.map(function(driver) {
-     if (driver.revenue > revenue !== undefined) {
+     if (driver.revenue > revenue ) {
        return driver.name;
-     }
+     } else
+     return []
   });
 }
